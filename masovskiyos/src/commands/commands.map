@@ -1,0 +1,33 @@
+# command | description | source
+# OATB_PATCH_APPLIED_customize_5
+atbman | .atb manager (local + installed: `-e`, `-i`, `-u`, `-l`), OpenACT via c.atb | src/kernel/kernel.asm
+help | built-in | src/kernel/kernel.asm
+about | built-in | src/kernel/kernel.asm
+clear | clear screen + redraw banner | src/kernel/kernel.asm
+cls | alias for clear | src/kernel/kernel.asm
+banner | redraw banner / banner clear / banner full | src/kernel/kernel.asm
+sys | sys <info|time|date|uptime|version|patches|banner> | src/kernel/kernel.asm
+uptime | show session uptime in minutes | src/kernel/kernel.asm
+time | show RTC time | src/kernel/kernel.asm
+date | show RTC date | src/kernel/kernel.asm
+version | show runtime version | src/kernel/kernel.asm
+patches | show patch status / patches raw | src/kernel/kernel.asm
+exit | close VM / power off | src/kernel/kernel.asm
+echo | echo [-n|-u|-l] <text> | src/kernel/kernel.asm
+setname | setname [name|reset] (max 32) | src/kernel/kernel.asm
+region | region [set] | src/kernel/kernel.asm
+passwd | set encrypted password | src/kernel/kernel.asm
+fetch | utility runtime card | src/kernel/kernel.asm
+reboot | built-in | src/kernel/kernel.asm
+ls | list files in OpenASM-FS | src/kernel/kernel.asm
+fsls | list files in OpenASM-FS | src/kernel/kernel.asm
+cd | cd [folder|/|..] | src/kernel/kernel.asm
+fsinfo | show OpenASM-FS info | src/kernel/kernel.asm
+fswrite | fswrite <file> <text> | src/kernel/kernel.asm
+write | alias for fswrite | src/kernel/kernel.asm
+touch | create user file (any extension) | src/kernel/kernel.asm
+mk | alias for touch | src/kernel/kernel.asm
+nano | inline file editor | src/kernel/kernel.asm
+append | append <file> <text> | src/kernel/kernel.asm
+rm | remove/reset file | src/kernel/kernel.asm
+cat | print file from OpenASM-FS | src/kernel/kernel.asm
